@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Statut</title>
+</head>
+<body>
+    <div class="header text">
+        Мой кабинет
+    </div>
+    <div class="panel sidebar">
+        <div class="user-box">
+            <img src="img/icon-bcgr.png" class="icon-bcgr" alt="">
+            <img src="img/Interface-smile.png" class="icon" alt="">
+            <a class="user-name" href="#"  >Михаил Мингалев</a>
+            <a class="user-status" href="#">Покупатель</a>
+        </div>
+        <div class="nav">
+            <a class="nav-item" href="#" id="currentPage" >Мой профиль</a>
+            <a class="nav-item" href="#">Statut Club</a>
+            <a class="nav-item" href="#">Заказы</a>
+            <a class="nav-item" href="#">Избранные товары</a>
+            <a class="nav-item" href="#">Отзывы о товарах</a>
+            <a class="nav-item" href="#" id="accountExit">Выход</a>
+        </div>
+    </div>
+    <div class="panel form">
+        <div class="my-profile-text">
+            Мой профиль
+        </div>
+
+        <div class="form-current-page">
+            <a class="profile-item" href="#" id="currentFormPage">Личные данные</a>
+            <a class="profile-item" href="#">Адреса доставки</a>
+            <a class="profile-item" href="#">Пароль</a>
+            <div class="chose-box"></div>
+        </div>
+        <div class="input-box">
+            <label for="">E-mail<span class="asterisk"> *</span></label><br>
+            <input type="email">
+        </div>
+                
+        <div class="input-box number">
+            <label for="">Номер телефона<span class="asterisk"> *</span></label><br>
+            <input type="tel" class="number">
+        </div>
+        
+        <div class="input-box" id="add">
+            <label for="">Дополнительный номер</label><br>
+            <input type="tel" class="number">
+
+        </div>
+
+        <div class="input-box">
+            <label for="">Фамилия<span class="asterisk"> *</span></label><br>
+            <input type="text">
+    
+        </div>
+        
+        <div class="input-box">
+            <label for="">Имя<span class="asterisk"> *</span></label><br>
+            <input type="text">
+        </div>
+
+        <div class="input-box">
+            <label for="">Отчество</label><br>
+            <input type="text">
+        </div>
+        
+        <div class="input-box dob">
+            <label for="dob">Дата рождения</label><br>
+            <input type="text" id="dob" name="dob">
+        </div>
+        <div class="input-box">
+            <label class="gender-label" for="" >Пол</label><br>
+            <div class="gender">
+                
+                Мужской
+            </div>
+            <div class="gender" id="woman">
+                Женский
+            </div>
+        </div>
+
+        <button class="save-button">Сохранить изменения</button>
+        
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js">        
+    </script>
+    <script>
+        flatpickr("#dob",{
+            dateFormat: "Y-m-d",
+            maxDate: "today"
+        });
+    </script>
+</body>
+</html>

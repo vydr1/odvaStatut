@@ -1,0 +1,269 @@
+body{
+    background-color: #F9F9FA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.panel{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+   
+}
+
+.header{
+    height: 30px;
+    padding-top: 30px;
+}
+
+.header.text{
+    margin-left: 115px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #2A3D48;
+}
+
+.sidebar{
+    width: 360px;
+    height: 460px;
+    margin-top: 30px;
+    vertical-align: top;
+    margin-left: 115px;
+}
+
+
+.form{
+    margin: 30px;    
+    width: 750px;
+    height: 910px;
+    margin-top: 30px;
+    vertical-align: top;
+    margin-right: 115px;
+}
+
+.nav{
+    margin-top: 15px;
+}
+
+.nav-item::before{
+    border-top: 1px solid #2A3D4826;
+    width: 320px;
+    margin: auto;
+}
+
+.nav-item{
+    display: block;
+    text-decoration: none;
+    /*margin-left: 20px;*/
+    color: #1c294d81;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+.nav-item::before{
+    content: "";
+    display: block;
+    border-top: 1px solid #2A3D4826;
+    width: 320px;
+    /*margin-left: 0px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 19px;*/
+    
+    
+}
+
+.user-box{
+    width: 320px;
+    height: 60px;
+    background-color: #F9F9FA;
+    margin: 20px 20px 15px 20px;
+    border-radius: 5px;
+}
+
+#currentPage{
+    border-left: 5px solid #FC6E1D;
+    font-weight: 500;
+    padding-left: 15px;
+    color: #FC6E1D;
+}
+
+#accountExit{
+    color: #FF3347;
+}
+
+.icon-bcgr{ 
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.icon{
+    position: absolute;
+    margin: 18px;
+    width: 25px;
+    height: 25px;
+}
+
+.user-name{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1C294D;
+}
+
+.user-status{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1c294d66;
+}
+
+
+.my-profile-text{
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-right: 75px;
+    color: #1C294D;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.form-current-page{
+    display: flex;
+    margin-top: 19px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 5px;
+    height: 50px;
+    background-color: #F6F6F6;
+    
+}
+
+.profile-item{
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 15px 10px 16px;
+    color: #55646dd6;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+#currentFormPage{
+    color: #1C294D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.chose-box{
+    position: absolute;
+    z-index: 0;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 139px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.input-box{
+    margin-top: 15px;
+    margin-left: 45px;
+    color: #959EA4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 75px;
+}
+
+input{
+    margin-top: 5px;
+    width: 420px;
+    height: 50px;
+    padding-left: 15px;
+    color: #1C294D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 1px solid #DFE2E4;
+    border-radius: 5px;
+}
+
+.input-box.number{
+    display: inline-block;
+}
+
+#add{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+input.number{
+    width: 194px;
+    margin-right: 0;
+}
+
+#dob{
+    width: 194px;
+}
+
+.gender{
+
+    display: inline-block;
+
+    margin-top: 5px;
+    color: #959EA4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    border: 1px solid #DFE2E4;
+    border-radius: 5px;
+
+    width: 111px;
+    height: 35px;
+
+    padding-left: 19px;
+    padding-top: 15px;
+   
+}
+
+#woman{
+    margin-left: 10px;
+    border-color: #FF7A00;
+    color: #FF7A00;
+}
+
+.asterisk{
+    color: #FF3347;
+}
+
+.save-button{
+    margin-left: 45px;
+    margin-top: 30px;
+    width: 278px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #FC6E1D;
+    border-color: #FC6E1D;
+    color: #FFFFFF;
+    Font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+
+.gender-label{
+    padding-bottom: 15px;
+}
