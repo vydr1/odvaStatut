@@ -29,75 +29,121 @@
             <a class="nav-item" href="#" id="accountExit">Выход</a>
         </div>
     </div>
-    <div class="panel form">
-        <div class="my-profile-text">
-            Мой профиль
-        </div>
-
-        <div class="form-current-page">
-            <a class="profile-item" href="#" id="currentFormPage">Личные данные</a>
-            <a class="profile-item" href="#">Адреса доставки</a>
-            <a class="profile-item" href="#">Пароль</a>
-            <div class="chose-box"></div>
-        </div>
-        <div class="input-box">
-            <label for="">E-mail<span class="asterisk"> *</span></label><br>
-            <input type="email">
-        </div>
-                
-        <div class="input-box number">
-            <label for="">Номер телефона<span class="asterisk"> *</span></label><br>
-            <input type="tel" class="number">
-        </div>
-        
-        <div class="input-box" id="add">
-            <label for="">Дополнительный номер</label><br>
-            <input type="tel" class="number">
-
-        </div>
-
-        <div class="input-box">
-            <label for="">Фамилия<span class="asterisk"> *</span></label><br>
-            <input type="text">
-    
-        </div>
-        
-        <div class="input-box">
-            <label for="">Имя<span class="asterisk"> *</span></label><br>
-            <input type="text">
-        </div>
-
-        <div class="input-box">
-            <label for="">Отчество</label><br>
-            <input type="text">
-        </div>
-        
-        <div class="input-box dob">
-            <label for="dob">Дата рождения</label><br>
-            <input type="text" id="dob" name="dob">
-        </div>
-
-
-        <div class="input-box">
-            Пол<br><br>
-            <input type="radio" name="gender" id="male" checked="checked">
-            <label class="gender-label" for="male">Мужской</label> 
-            <input type="radio" name="gender" id="female" checked="">
-            <label class="gender-label" for="female">Женский</label> 
-        </div>
-       <!-- <div class="input-box">
-            <label class="gender-label" for="" >Пол</label><br>
-            <div class="gender">
-                
-                Мужской
+    <div class="panel form" >
+        <form 
+        action="sendmail.php" 
+        id="form" 
+        class="form__body" 
+        name="form" 
+        method="POST">
+            <div class="my-profile-text">
+                Мой профиль
             </div>
-            <div class="gender" id="woman">
-                Женский
-            </div>
-        </div> -->
 
-        <button class="save-button">Сохранить изменения</button>
-        
+            <div class="form-current-page">
+                <a class="profile-item" href="#" id="currentFormPage">Личные данные</a>
+                <a class="profile-item" href="#">Адреса доставки</a>
+                <a class="profile-item" href="#">Пароль</a>
+                <div class="chose-box"></div>
+            </div>
+            <div class="input-box">
+                <label for="">E-mail<span class="asterisk"> *</span></label><br>
+                <input 
+                type="email" 
+                data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                class="email input req" 
+                id = "email";
+                name="email">
+            </div>
+                    
+            <div class="input-box number">
+                <label for="">Номер телефона<span class="asterisk"> *</span></label><br>
+                <input 
+                type="tel" 
+                data-reg="^((\+7|7|8)+([0-9]){10})$"
+                id="phone"
+                class="phone input number add" 
+                name="phone">
+            </div>
+            
+            <div class="input-box" id="add">
+                <label for="">Дополнительный номер</label><br>
+                <input 
+                type="tel" 
+                class="phone input number" 
+                id = "addNumber"
+                name="addNumber">
+            </div>
+           
+
+            <div class="input-box">
+                <label for="">Фамилия<span class="asterisk"> *</span></label><br>
+                <input 
+                type="text" 
+                class="input req" 
+                data-reg="^[А-ЯЁ][а-яё]*$"
+                id="secondName"
+                name="secondName">
+            </div>
+            
+            <div class="input-box">
+                <label for="">Имя<span class="asterisk"> *</span></label><br>
+                <input 
+                type="text" 
+                class="input req" 
+                data-reg="^[А-ЯЁ][а-яё]*$"
+                name="name"
+                id="name">
+
+            </div>
+
+            <div class="input-box">
+                <label for="">Отчество</label><br>
+                <input 
+                type="text" 
+                name="third"
+                id = "third">
+            </div>
+            
+            <div class="input-box dob">
+                <label for="dob">Дата рождения</label><br>
+                <input 
+                type="text" 
+                id="dob" 
+                name="dob" 
+                lass="input" >
+            </div>
+
+
+            <div class="input-box">
+                Пол<br><br>
+                <input 
+                type="radio" 
+                name="genderMale" 
+                id="genderMale" 
+                
+                >
+                <label class="gender-label" for="male">Мужской</label> 
+                <input 
+                type="radio" 
+                name="genderFemale" 
+                id="genderFemale" 
+                checked="checked">
+                <label class="gender-label" for="female">Женский</label> 
+            </div>
+        <!-- <div class="input-box">
+                <label class="gender-label" for="" >Пол</label><br>
+                <div class="gender">
+                    
+                    Мужской
+                </div>
+                <div class="gender" id="woman">
+                    Женский
+                </div>
+            </div> -->
+
+            <button type="ggg " class="submit" id="button" >Сохранить изменения</button>
+        </form>
         
     </div>
 
@@ -110,5 +156,6 @@
             maxDate: "today"
         });
     </script>
+    <script src="scriptTry3.js"></script>
 </body>
 </html>
