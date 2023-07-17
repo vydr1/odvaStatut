@@ -18,8 +18,8 @@ $mail-> setLanguage('ru', 'phpmailer/languange/');
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = '3sendmailtest12@gmail.com';
-$mail->Password = 'rkspqymvvqmaqzob';
+$mail->Username = 'mail1send2test3@gmail.com';
+$mail->Password = 'ewuukpelubkgwtdo';
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port = 465;
 
@@ -70,6 +70,7 @@ if(count($_POST) != 0){
     echo 'yyyyyyy';
 }
 var_dump($_POST);
+
 if(!$mail->send()) 
 {
     $message = "Ошибка отправки";
@@ -78,6 +79,6 @@ else
 {
     $message = "Данные отправлены!";
 }
-            
+        
 //header('Content-type: application/json');
 //echo json_encode(($response));

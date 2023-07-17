@@ -1,5 +1,5 @@
 //let email = document.getElementById("email");
-alert(email.value); 
+//alert(email.value); 
 
 const form = document.forms["form"];
 const formArr = Array.from(form);
@@ -45,10 +45,17 @@ function formCheck(e) {
   validFormArr.forEach((el) => {
     allValid.push(el.getAttribute("is-valid"));
   });
-  const isAllValid = allValid.reduce((acc, current) => {
-    return acc && current;
+  
+  
+  let validcheck = true;
+  allValid.forEach(element => {
+    if(element == '0')
+      {
+        validcheck = false;
+      }
   });
-  if (!Boolean(Number(isAllValid))) {
+
+  if (!validcheck) {
     alert("Заполните поля правильно!");
     return;
   }

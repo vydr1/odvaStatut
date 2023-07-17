@@ -1,4 +1,5 @@
-//alert(email.value); 
+//let email = document.getElementById("email");
+alert(email.value); 
 
 const form = document.forms["form"];
 const formArr = Array.from(form);
@@ -15,7 +16,7 @@ formArr.forEach((el) => {
 });
 
 form.addEventListener("input", inputHandler);
-form.addEventListener("button", test);
+form.addEventListener("submit", formCheck);
 
 
 function inputHandler({ target }) {

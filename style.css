@@ -224,26 +224,6 @@ input.number{
     width: 194px;
 }
 
-.gender{
-
-    display: inline-block;
-
-    margin-top: 5px;
-    color: #959EA4;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-
-    border: 1px solid #DFE2E4;
-    border-radius: 5px;
-
-    width: 111px;
-    height: 35px;
-
-    padding-left: 19px;
-    padding-top: 15px;
-   
-}
 
 
 .asterisk{
@@ -282,6 +262,7 @@ input[type="radio"]:checked + .gender-label{
     color: #FC6E1D;
     padding: 15px 50px 15px 19px;
 }
+
 
 .req._error{
     box-shadow: 0 0 15px red;
